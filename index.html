@@ -1,0 +1,185 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Awareness - Home</title>
+    <style>
+        body {
+            margin:0;
+            font-family: Arial, sans-serif;
+            background:#f7faff;
+            display:flex;
+        }
+
+        /* SIDE MENU BAR */
+        .sidebar {
+            width:220px;
+            background:#003f7f;
+            height:100vh;
+            position:fixed;
+            top:0;
+            left:0;
+            padding-top:20px;
+            box-shadow: 3px 0 10px rgba(0,0,0,0.3);
+        }
+        .sidebar h2 {
+            color:white;
+            text-align:center;
+            margin-bottom:20px;
+        }
+        .sidebar a {
+            display:block;
+            padding:12px 20px;
+            color:white;
+            text-decoration:none;
+            font-size:18px;
+            margin:5px 0;
+            transition:0.3s;
+        }
+        .sidebar a:hover {
+            background:#005bbb;
+        }
+
+        /* MAIN CONTENT WILL SHIFT RIGHT */
+        .main-content {
+            margin-left:230px;
+            width:calc(100% - 230px);
+        }
+
+        .navbar { background:#005bbb; padding:15px; display:flex; justify-content:center; }
+        .navbar a { color:white; margin:0 20px; text-decoration:none; font-weight:bold; }
+
+        .banner {
+            background: url("bnnr.jpg") center/contain no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px #000;
+            background-color: #000;
+            overflow:hidden;
+        }
+        .banner span {
+            display:inline-block;
+            animation: slideText 8s linear infinite;
+        }
+        @keyframes slideText {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .container { padding:30px; max-width:1000px; margin:auto; }
+        h2 { color:#005bbb; }
+
+        .map-section { text-align:center; }
+        .map-section img { width:70%; border-radius:10px; box-shadow:0 0 10px #888; }
+        .map-desc { margin-top:8px; font-size:16px; color:#003f7f; font-style:italic; }
+
+        .card-grid {
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+            gap:20px;
+            margin-top:20px;
+        }
+        .card { background:white; padding:15px; border-radius:10px; box-shadow:0 0 10px #ccc; text-align:center; }
+        .card img { width:100%; height:150px; object-fit:cover; border-radius:10px; }
+        .card a { display:inline-block; margin-top:10px; color:#005bbb; font-weight:bold; }
+
+        /* Helpline Section */
+        .helpline {
+            margin-top:40px;
+            background:#003f7f;
+            padding:25px;
+            border-radius:10px;
+            color:white;
+            text-align:center;
+            box-shadow:0 0 15px rgba(0,0,0,0.3);
+        }
+        .helpline h2 { color:#ffd700; font-size:28px; }
+
+    </style>
+</head>
+<body>
+
+    <!-- LEFT SIDE MENU BAR -->
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <a href="index.html">🏠 Home</a>
+        <a href="alert.html">🚨 Disaster Alerts</a>
+        <a href="floods.html">Floods</a>
+        <a href="earthquakes.html">Earthquakes</a>
+        <a href="cyclones.html">Cyclones</a>
+        <a href="wildfires.html">Wildfires</a>
+        <a href="droughts.html">Droughts</a>
+        <a href="landslides.html">Landslides</a>
+    </div>
+
+    <div class="main-content">
+
+        <div class="banner"><span>Disaster Safety & Preparedness</span></div>
+
+        <div class="container">
+
+            <h2>Global Disaster-Prone Areas</h2>
+            <div class="map-section">
+                <img src="globaldisaster.jpeg" alt="World Disaster Map">
+                <div class="map-desc">Map showing regions most vulnerable to natural disasters worldwide.</div>
+            </div>
+
+            <h2>Explore Disasters</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="floods.jpeg" alt="Floods">
+                    <h3>Floods</h3>
+                    <a href="floods.html">Learn More →</a>
+                </div>
+
+                <div class="card">
+                    <img src="earthquakes.jpeg" alt="Earthquake">
+                    <h3>Earthquakes</h3>
+                    <a href="earthquakes.html">Learn More →</a>
+                </div>
+
+                <div class="card">
+                    <img src="cycloes.jpeg" alt="Cyclone">
+                    <h3>Cyclones</h3>
+                    <a href="cyclones.html">Learn More →</a>
+                </div>
+
+                <div class="card">
+                    <img src="wildfire.jpg" alt="Wildfire">
+                    <h3>Wildfires</h3>
+                    <a href="wildfires.html">Learn More →</a>
+                </div>
+
+                <div class="card">
+                    <img src="drought.jpeg" alt="Drought">
+                    <h3>Droughts</h3>
+                    <a href="droughts.html">Learn More →</a>
+                </div>
+
+                <div class="card">
+                    <img src="landslide.jpeg" alt="Landslide">
+                    <h3>Landslides</h3>
+                    <a href="landslides.html">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="helpline">
+                <h2>Emergency Helpline Numbers</h2>
+                <p>🚨 National Disaster Helpline: <strong>1078</strong></p>
+                <p>🚓 Police Emergency: <strong>100</strong></p>
+                <p>🚑 Medical Emergency: <strong>108</strong></p>
+                <p>🔥 Fire Services: <strong>101</strong></p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
