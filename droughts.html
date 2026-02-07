@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drought Safety</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #fefaf3;
+            color: #4a3c2d;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: #d58a00;
+            padding: 18px 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            color: #fff2c5;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .header {
+           padding: 50px 20px;
+            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('drought-banner.jpg') center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .header h1 {
+            font-size: 50px;
+            margin: 0;
+            font-weight: 700;
+        }
+        .header p {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        /* Section Titles */
+        h2 {
+            font-size: 24px;
+            color: #ffffff;
+            background: #c27600;
+            padding: 12px 18px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-top: 50px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        /* Image Box */
+        .img-box img {
+            width: 55%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Card Style */
+        .card {
+            margin-top: 20px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+        }
+
+        /* Two Column Boxes */
+        .flex-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .box {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+        }
+        .box h3 {
+            margin-top: 0;
+            color: #a86200;
+            font-size: 22px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            background: #d58a00;
+            color: white;
+            padding: 25px 0;
+            margin-top: 50px;
+            font-size: 16px;
+        }
+        .quote-box {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff4d6;
+    border-left: 8px solid #c27600;
+    padding: 18px 25px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #8a5b00;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="floods.html">Floods</a>
+        <a href="earthquakes.html">Earthquakes</a>
+        <a href="cyclones.html">Cyclones</a>
+        <a href="wildfires.html">Wildfires</a>
+        <a href="droughts.html">Droughts</a>
+        <a href="landslides.html">Landslides</a>
+    </div>
+
+    <div class="header">
+        <h1>Drought Preparedness</h1>
+    </div>
+
+    <div class="banner"><span></span></div>
+    <div class="quote-box">
+    “Drought does not begin with an empty river — it begins with wasted water.”
+</div>
+    <div class="container">
+        <div class="img-box">
+            <img src="drought.jpeg" alt="Drought Image" />
+        </div>
+
+
+        <h2>Causes of Droughts</h2>
+        <div class="card">
+            <ul>
+                <li>Low rainfall over long periods</li>
+                <li>Extreme heat and climate change</li>
+                <li>Overuse of groundwater and rivers</li>
+            </ul>
+        </div>
+
+        <h2>Warning Signs</h2>
+        <div class="card">
+            <ul>
+                <li>Decline in river and groundwater levels</li>
+                <li>Crop failure and dry soil</li>
+                <li>Long dry spells, cracked land</li>
+            </ul>
+        </div>
+
+        <h2>Preparation Tips</h2>
+        <div class="card">
+            <ul>
+                <li>Install rainwater harvesting systems</li>
+                <li>Grow drought-resistant crops</li>
+                <li>Store emergency drinking water</li>
+                <li>Use efficient irrigation like drip systems</li>
+            </ul>
+        </div>
+
+        <h2>During a Drought</h2>
+        <div class="card">
+            <ul>
+                <li>Reduce non-essential water usage</li>
+                <li>Follow water rationing guidelines</li>
+                <li>Reuse household water when possible</li>
+                <li>Support community water-saving programs</li>
+            </ul>
+        </div>
+
+        <h2>Do's and Don'ts</h2>
+        <div class="flex-box">
+            <div class="box">
+                <h3>✔ Do's</h3>
+                <ul>
+                    <li>Take short baths instead of long showers</li>
+                    <li>Fix leaking taps immediately</li>
+                    <li>Store and use water wisely</li>
+                    <li>Reuse RO and AC water for plants</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>✘ Don'ts</h3>
+                <ul>
+                    <li>Don't leave taps running unnecessarily</li>
+                    <li>Don't wash vehicles frequently</li>
+                    <li>Don't waste garden water</li>
+                    <li>Don't ignore early signs of drought</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2025 Disaster Preparedness Project — Stay Safe, Stay Aware
+    </div>
+</body>
+</html>
